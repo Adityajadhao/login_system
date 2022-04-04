@@ -32,7 +32,7 @@ if (isset($_POST['check_submit_btn'])) {
         //header('Location:http://localhost/LoginRegisterPass/AdminLTE/pages/examples/regi.php');
         echo "Registered successfully Redirecting to log in page...... ";
 ?>
-        <META HTTP-EQUIV="Refresh" CONTENT="2; URL=http://localhost/LoginRegisterPass/AdminLTE/pages/examples/login.php">
+        <META HTTP-EQUIV="Refresh" CONTENT="2; URL=http://localhost/LoginRegisterPass/AdminLTE/pages/examples/login.html">
 <?php
 
 

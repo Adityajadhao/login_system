@@ -20,10 +20,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $sql = "UPDATE task4data SET pasword='$pwd' WHERE email='$email'";
             mysqli_query($conn, $sql);
-            echo "new temp Password is:" . $pwd;
-            echo "<a href = 'login.php'>click here to go on login page</a>";
+
+            // $return = array(
+            //     'statuscode' => 200,
+            //     'message' => "login Sucessfull. New Password is:" . $pwd
+            // );
+            // http_response_code(200);
+            echo "<b>Temp Password :<b>" . $pwd;
+            // echo "<a href = 'login.php'>click here to go on login page</a>";
         } else {
-            echo "not updated";
+            // $return = array(
+            //     'statuscode' => 201,
+            //     'message' => "invalid credentials."
+            // );
+            // http_response_code(201);
+
+            echo "<b>EMAIL NOT FOUND<b>";
         }
+        //print_r(json_encode($return));
+        mysqli_close($conn);
     }
 }
