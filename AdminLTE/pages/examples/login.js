@@ -4,6 +4,7 @@ $(document).ready(function () {
     e.preventDefault();
     var email = $("#email_log").val();
     var password = $("#password_log").val();
+
     if (email != "" && password != "") {
       $.ajax({
         url: "loggingIn.php",

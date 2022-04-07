@@ -71,7 +71,12 @@
             <div class="row">
               <div class="col-8">
                 <div class="icheck-primary">
-                  <input type="checkbox" id="remember" />
+                  <input
+                    type="checkbox"
+                    id="remember"
+                    name="remember"
+                    onclick="setcookie()"
+                  />
                   <label for="remember"> Remember Me </label>
                 </div>
               </div>
@@ -96,7 +101,7 @@
           </p>
           <p class="mb-0">
             <a
-              href="http://localhost/LoginRegisterPass/AdminLTE/pages/examples/regi.php"
+              href="http://localhost/LoginRegisterPass/AdminLTE/pages/examples/regi.html"
               class="text-center"
               >Register a new membership</a
             >
